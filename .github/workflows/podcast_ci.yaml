@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - main
-      - master
+      - my_local
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build-and-test:
